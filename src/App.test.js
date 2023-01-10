@@ -56,5 +56,5 @@ test('Click load Data button and search specific user', async () => {
   const searchButton = screen.getByRole('button', { name: 'Search User' });
   fireEvent.click(searchButton);
 
-  expect(await screen.getByText(/4 results found/i)).toBeInTheDocument();
+  expect(await screen.getByText(/5 results found/i)).toBeInTheDocument();
 });

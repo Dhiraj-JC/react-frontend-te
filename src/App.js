@@ -51,7 +51,7 @@ function App() {
       <label data-testid="resultfound">{users.length} results found</label>
       {users &&
         users.map((user) => (
-          <div >
+          <div key={user.id}>
             <hr />
             <h1>Users Details</h1>
             <h1>{user.name}</h1>
