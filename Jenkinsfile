@@ -8,6 +8,11 @@ pipeline {
           steps {
               git 'https://github.com/Dhiraj-JC/react-frontend-te.git'
           }
+      }
+      stage('Dummy stage') {
+        steps {
+            echo "Dummy stage"
+        }
       }  
        stage('Install Dependencies') {
           steps {
